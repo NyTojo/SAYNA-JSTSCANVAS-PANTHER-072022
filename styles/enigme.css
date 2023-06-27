@@ -1,0 +1,451 @@
+:root{
+    --White-color:#fff;
+    --Gray-color:#f2cef2;
+    --Violet-color:#9e91b7;
+    --Rose-color:#df99f2;
+    --Bleu1-color:#3d2da6;
+    --Bleu2-color:#07338c;
+    --bleu3-color:#021740;
+}
+
+
+@font-face{
+    font-family: 'beyno';
+    src: url(../font/beyno.ttf);
+}
+
+@font-face{
+    font-family: 'cantarell';
+    src: url(../font/Cantarell-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'panthera';
+    src: url(../font/Panthera.ttf);
+}
+
+@font-face{
+    font-family: 'wakanda';
+     src: url(../font/WakandaForever-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.espace-vertical{
+    height: 100px;
+}
+
+/*style pour scroll bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #121a31;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+/*style generale*/
+
+html{
+    position: relative;
+    z-index: 1;
+    background-color: rgb(28, 28, 29);
+    
+}
+
+html{
+    background-image: url(../illustration/ofpages/background.png);
+    background-color: rgb(150, 150, 150);
+}
+
+body{
+    position: relative;
+    z-index: 2;
+    color: var(--White-color);
+}
+
+
+/*style pour entête*/
+
+nav{
+    margin-left: 102px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-right: 100px;
+}
+
+ul li a{
+    color: white;
+}
+
+ul li{
+    font-family: 'beyno';
+    display: inline-flex;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: var(--Bleu1-color);
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 40px;
+    top: 230px;
+    z-index: 10;
+    
+}
+
+.scroll img{
+    margin-top: 15px;
+}
+
+p{
+    font-family: 'cantarell';
+    font-size: 16px;
+    text-align: justify;
+    color: var(--White-color);
+
+}
+
+h1{
+    font-family: 'beyno';
+    font-size: 55px;
+    color: var(--Violet-color);
+}
+
+h2{
+    font-family: 'wakanda';
+    font-size: 32px;
+    color: var(--Violet-color);
+    font-display: thin;
+}
+
+span{
+    font-family: 'wakanda';
+    font-size: 25px;
+}
+
+
+/*style pour body*/
+
+
+#dora{
+    background-image: url(../illustration/Enigme/Pantherenigme1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 800px;
+    background-position-x: 0;
+    background-position-y: -160px;
+}
+
+#dora 
+.container
+.dora-milaje
+.dora-content{
+    display: flex;   
+}
+
+#dora 
+.container{
+    margin-left: 500px;
+    width: 100%;
+}
+
+#dora 
+.container
+.dora-milaje
+.dora-content{
+    width: 80%;
+    margin-left: 200px;
+}
+
+
+
+#dora .dora-milaje{
+    width: 80%;
+    margin-left: 200px;
+}
+
+#dora
+.dora-text{
+    background-image: url(../illustration/Enigme/Pantherenigme2.png);
+    background-repeat: no-repeat; 
+    width: 800px;
+    height: 700px;
+    
+}
+
+
+ 
+#dora 
+.text{
+    margin-top: 300px;
+    font-size: 12px;
+    position: relative;
+    display: inline-flex;
+}
+
+#dora 
+.text p{
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    left: 100px;
+    top: 30px;
+}
+
+.fond{
+    width: 110%;
+    position: absolute;
+    z-index: 3;
+    top: -90px;
+
+}
+
+.bar{
+    margin-top: 100px;
+    border-top: #0c1530 4px solid;
+    top: 150px;
+    width: 100%;
+    margin-left: -102;
+}
+
+.bar2{
+    margin-top: 0px;
+    border-top: #0c1530 4px solid;
+    width: 100%;
+    margin-left: -102;
+}
+
+
+#citation
+.container
+.cite{
+    margin-left: 120px;
+    text-align: justify;
+    width: 60%;
+}
+
+#défi
+.déchiffre{
+    width: 51%;
+    margin-left: 120px;
+}
+
+#défi
+.enigme{
+    display: flex;
+}
+
+.tip{
+    width: 50%;
+    text-align: justify;
+
+}
+
+.tip
+.fond1{
+    width: 100%;
+    z-index: 3;
+    position: relative;
+
+    
+}
+
+.tip
+p{
+    text-align: center;
+    z-index: 4;
+    font-size: 13px;
+    top: 1150px;
+    position: absolute;
+    margin: 100px;
+}
+
+#défi
+.form
+.textarea{
+    width: 500px;
+    height: 45px;
+    border-radius: 38px;
+    background-color: transparent;
+    border: 1px solid var(--Violet-color);
+}
+
+#défi
+.form
+.btn{
+    width: 174px;
+    height: 45px;
+    border-radius: 38px;
+    color: var(--Bleu1-color);
+    margin-left: 150px;
+    border: #fff;
+}
+
+::placeholder{
+    align-items: center;
+    text-align: center;
+}
+
+#défi
+.form
+.btn:hover{
+    box-shadow: #F2CEF2 0px 0px 15px;
+    
+}
+
+#défi
+.form{
+    margin-top: -50px;
+    margin-left: 150px;
+}
+
+/*style de footer*/
+
+footer{
+    background-image: url(../illustration/ofpages/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: var(--White-color);
+    /*Background: linear-gradient(180deg, #3D2DA6 0%, #02174090.43%);*/
+}
+
+footer .footer {
+    margin-top: 150px;
+}
+
+.footer, .footer .footer_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .footer_text{
+    align-items: center;
+    width: 50%;
+}
+
+.image1{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 3;
+}
+
+.image2{
+    position: absolute;
+    z-index: 4;
+    left: 250px;
+}
+
+footer .footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Illustrations/Logo/footer1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 50%;
+}
+
+footer 
+.footer ul li a{
+    text-decoration: none;
+    color: var(--White-color);
+    font-family: "Cantarell";   
+}
+
+footer
+.footer
+ul
+li
+a{
+    display: flex;
+}
+
+.footer
+.foot 
+ul li{
+    display: block;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+footer h2{
+    text-decoration: none;
+    font-family: "Cantarell";
+    letter-spacing: 28%;
+    margin-left: 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+ul {
+    display: flex;
+}
+
+
+.icon{
+margin-right: 120px;
+margin-top: 40px;
+width: 100%;
+}
+
+footer .icon img{
+    padding: 5px;
+}
+
+footer
+.condution
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin-top: -100px;
+    right: 20px;
+    font-family: "Cantarell";
+    font-size: 12px;
+    margin-right: 22%;
+    margin-left: 600px;
+}
+
+footer
+.condution
+a{
+    text-decoration: none;
+    color: #fff;
+}
+

@@ -1,0 +1,605 @@
+:root{
+    --White-color:#fff;
+    --Gray-color:#f2cef2;
+    --Violet-color:#9e91b7;
+    --Rose-color:#df99f2;
+    --Bleu1-color:#3d2da6;
+    --Bleu2-color:#07338c;
+    --bleu3-color:#021740;
+}
+
+@font-face{
+    font-family: 'beyno';
+    src: url(../font/beyno.ttf);
+}
+
+@font-face{
+    font-family: 'cantarell';
+    src: url(../font/Cantarell-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'panthera';
+    src: url(../font/Panthera.ttf);
+}
+
+@font-face{
+    font-family: 'wakanda';
+     src: url(../font/WakandaForever-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #121931;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+html{
+    position: relative;
+    z-index: 1;
+    background-color: rgb(28, 28, 29);
+    
+}
+
+html{
+    background-image: url(../illustration/ofpages/background.png);
+ 
+    background-color: rgb(138, 134, 134);
+}
+
+body{
+    position: relative;
+    z-index: 2;
+
+}
+
+body{
+    background-image: url(../illustration/Accueil/Pantherhome1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70%;
+    background-position-x: 400px;
+    background-position-y: 100px;
+}
+
+
+.espace-vertical{
+    height: 100px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    margin-left: 102px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-right: 100px;
+}
+
+header ul li a{
+    color: white;
+}
+
+header ul li{
+    font-family: 'beyno';
+    display: inline-flex;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: var(--Bleu1-color);
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 40px;
+    top: 230px;
+    z-index: 10;
+    
+}
+
+.scroll img{
+    margin-top: 15px;
+}
+
+
+.big-box{
+    margin-left: 102px;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    font-size: 12px;
+    justify-content: stretch;
+    text-align: start;
+    width: 35%;
+}
+
+.personnes{
+    font-size: 12px;
+    
+}
+
+h1, h2, h3, h4{
+    color: var(--Violet-color) ;
+    text-align: left;
+
+}
+
+h1{
+    font-family: 'panthera';
+    font-size: 50px;
+    color: var(--Violet-color);
+}
+
+h2{
+    font-family: 'beyno';
+    font-size: 25px;
+    color: var(--Violet-color);
+    margin-left: 102px;
+}
+
+.forever{
+    margin-left: 0;
+}
+
+p{
+    font-family: 'cantarell';
+    text-align: justify;
+    color: var(--White-color);
+    font-size: 15px;
+}
+
+#article .description{
+    margin-left: 102px;
+    width: 70%;
+    text-align: justify;
+    font-size: 13px;
+}
+
+#perssonage{
+    margin-left: 102px;
+}
+
+#slider-multimedia{
+    margin-left: 102px;
+    display: flex;
+    background-color: #030e31d5;
+}
+
+.slider-image img{
+    height: 260px;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: -3px;
+}
+
+.slider-image img{
+transition: transform 0.3s ease-in-out;
+}
+
+.slider-image img:hover{
+    transform: scale(1.3);
+}
+
+.slider-content{
+font-family: 'cantarell';
+font-size: 10px;
+margin: 15px;
+margin-top: 30px;
+}
+
+#multimedia .slider-content{
+    padding: 0;
+}
+
+/*styles pour identité*/
+
+#carte-identité .carte{
+    width: 350px;
+    height: 700px;
+    margin-top: 200px;
+    background-color: var(--White-color);
+    border-radius: 20px;
+    margin-right: 100px;
+}
+
+#carte-identité .carte p{
+    color: #000000;
+    text-align: center;
+    
+}
+
+#carte-identité .carte  h3{
+    font-family: "cantarell";
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+#carte-identité .carte button{
+    border-color: var(--White-color);
+    color: var(--White-color);
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--Bleu1-color);
+
+}
+
+#carte-identité .carte ul{
+    display: inline-flex;
+}
+
+#carte-identité .carte .TChalla img{
+    position: relative;
+    height: 348px;
+    width: 250px;
+    margin-top: -200px;
+    margin-left: 50px;
+}
+
+#carte-identité .carte .info nav{
+    margin-left: 0;
+}
+
+#carte-identité .mask img{
+    margin-top: 200px;
+    position: relative;
+    margin: -80px;
+    
+}
+
+
+/*style pour contact*/
+
+#contact {
+    background-image: url(../illustration/Accueil/Pantherhome7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+#contact .formulaire{
+    background: linear-gradient(180deg, #ffffff, #ffffff25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    width: 55%;
+    height: 470px;
+    margin-left: 25%;
+
+}
+
+#contact .formulaire .form{
+    width: 70%;
+    align-items: center;
+    
+}
+
+
+#contact .form input[type='email'],
+#contact .form textarea,
+#contact .form input[type='text'] {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #2f2141;
+}
+
+#contact .formulaire .form .btn{
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    margin-left: 180px;
+    border: #ffffff;
+}
+
+#contact .formulaire .form .btn:hover{
+    box-shadow:  #021740 0px 0px 20px;
+}
+
+#contact .formulaire .form h3{
+    font-family: 'cantarell';
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+}
+
+#contact 
+.form h4{
+    font-family: 'cantarell';
+    text-align: center;
+    color: #000000;
+}
+
+
+#contact .formulaire .form input {
+    width: 520px;
+}
+
+#contact .formulaire .form textarea{
+    width: 520px;
+}
+
+::placeholder{
+    color: #170275;
+    font-size: 15px;
+}
+
+
+
+
+/*style de footer*/
+
+footer{
+    background-image: url(../illustration/ofpages/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: var(--White-color);
+}
+
+footer .footer {
+    margin-top: 150px;
+}
+
+.footer, .footer .footer_text{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .footer_text{
+    align-items: center;
+    width: 50%;
+}
+
+.image1{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 3;
+}
+
+.image2{
+    position: absolute;
+    z-index: 4;
+    left: 250px;
+}
+
+footer .footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Illustrations/Logo/footer1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 50%;
+}
+
+footer .footer_text ul li a{
+    text-decoration: none;
+    color: var(--White-color);
+    font-family: "Cantarell";   
+}
+
+footer .footer_text ul li{
+    display: block;
+    text-decoration: none;
+}
+
+footer .footer_text h2{
+    text-decoration: none;
+    font-family: "Cantarell" ;
+    font-size: 16px;
+    letter-spacing: 28%;
+}
+
+.down{
+    margin-left: 0;
+    font-family: 'cantarell';
+    font-size: 22px;
+    color: #fff;
+}
+
+.icon{
+margin-right: 120px;
+margin-top: 40px;
+width: 100%;
+}
+
+footer .icon img{
+    padding: 5px;
+}
+
+footer
+.condution
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin-top: -10px;
+    right: 20px;
+    font-family: "Cantarell";
+    font-size: 12px;
+    margin-right: 20%;
+    margin-left: 600px;
+}
+
+footer
+.condution
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.page{
+  margin-left: -120px ;
+}
+
+footer
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer 
+ul{
+    font-family: 'cantarell';
+}
+
+footer 
+ul li{
+    display:flex;
+}
+/*responsive mobile*/
+
+@media (max-width: 767px) {
+  html {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Gray-color);
+  }
+
+  #slider-multimedia{
+    display: flex;
+    background-color: #030e31d5;
+}
+
+  p{
+    color: #fff;
+  }
+  html img{
+    size: 40%;
+  }
+
+  body {
+    background-color: var(--Gray-color);
+    width: 100px;
+  }
+
+ nav{
+    height: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+
+footer{
+    width: 200px;
+    height: 300px;
+}
+
+/* Réorganisation du navigation pour un affichage vertical sur mobile */
+nav ul {
+  display: flex;
+}
+
+/* Ajustement la taille du logo */
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Réduction la taille des images des réseaux sociaux */
+.scroll img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Ajustement de la taille du texte principal */
+.content h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.content h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.content p {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Réorganiseation des images du slider */
+.slider-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Ajustement de la taille du texte dans le slider */
+.slider-content h2 {
+  font-size: 20px;
+}
+
+.slider-content p {
+  font-size: 16px;
+}
+
+/* Réorganiser la carte d'identité */
+.carte {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.info ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.info li {
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #fff;
+}
+  
+}
