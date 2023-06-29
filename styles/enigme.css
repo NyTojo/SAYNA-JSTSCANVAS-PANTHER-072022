@@ -333,119 +333,114 @@ p{
 /*style de footer*/
 
 footer{
-    background-image: url(../illustration/ofpages/back_footer.png);
+    background-image: url(../illustration/ofpages/background.png);
+}
+
+.footerDiv p, 
+.footerDiv a,
+.footerDiv li {
+    font-family: cantarell;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 0;
+    color: #fff;
+}
+
+footer h3 {
+    font-family: Cantarell;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 5px 0 10px;
+}
+
+footer {
+    background: url(../illustration/ofpages/back_footer.png); 
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    color: var(--White-color);
-    /*Background: linear-gradient(180deg, #3D2DA6 0%, #02174090.43%);*/
+    background-size: 100% 100%;
+    border: solid 1px transparent;
 }
 
-footer .footer {
-    margin-top: 150px;
+.footerDiv {
+    margin: 200px 10% 50px;
 }
 
-.footer, .footer .footer_text{
+.footerDiv {
+    display: grid;
+    grid-template-areas: 
+        "logo logo pages findUs"
+        "logo logo pol pol";
+    gap: 15px;
+}
+
+
+.logo {
+    grid-area: logo;
+}
+
+.pages {
+    grid-area: pages;
+}
+
+.findUs {
+    grid-area: findUs;
+}
+
+.pol {
+    grid-area: pol;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+}
+
+.logo__imgCont {
+    width: 25vw;
+    height: 25vw;
+    min-width: 150px;
+    min-height: 150px;
+    background: url(../illustration/ofpages/footer1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
-    justify-content: space-between;
-}
-
-footer .footer .footer_text{
-    align-items: center;
-    width: 50%;
-}
-
-.image1{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    z-index: 3;
-}
-
-.image2{
-    position: absolute;
-    z-index: 4;
-    left: 250px;
-}
-
-footer .footer_content{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    background-image: url(./Illustrations/Logo/footer1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 450px;
-    width: 50%;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
-footer 
-.footer ul li a{
-    text-decoration: none;
-    color: var(--White-color);
-    font-family: "Cantarell";   
+.logo__imgCont__img {
+    position: relative;
+    right: 2vw;
+    width: 12vw;
+    min-width: 75px;
 }
 
-footer
-.footer
-ul
-li
-a{
+.logo__imgCont:hover {
+    transform: scale(110%);
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.findUs {
     display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
 
-.footer
-.foot 
-ul li{
-    display: block;
-    text-decoration: none;
-    margin-left: 0;
+.findUs img {
+    max-width: 60px;
+    margin: 0 5px;
 }
 
-footer h2{
-    text-decoration: none;
-    font-family: "Cantarell";
-    letter-spacing: 28%;
-    margin-left: 0;
-    font-size: 22px;
-    color: #fff;
+.findUs img:hover {
+    transform: scale(110%);
 }
 
-
-ul {
-    display: flex;
-}
-
-
-.icon{
-margin-right: 120px;
-margin-top: 40px;
-width: 100%;
-}
-
-footer .icon img{
-    padding: 5px;
-}
-
-footer
-.condution
-{
+.pol {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-   
-    margin-top: -100px;
-    right: 20px;
-    font-family: "Cantarell";
-    font-size: 12px;
-    margin-right: 22%;
-    margin-left: 600px;
 }
-
-footer
-.condution
-a{
-    text-decoration: none;
-    color: #fff;
-}
-

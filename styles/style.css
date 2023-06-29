@@ -10,22 +10,22 @@
 
 @font-face{
     font-family: 'beyno';
-    src: url(../font/beyno.ttf);
+    src: url("../font/beyno.ttf");
 }
 
 @font-face{
     font-family: 'cantarell';
-    src: url(../font/Cantarell-Regular.ttf);
+    src: url("../font/Cantarell-Regular.ttf");
 }
 
 @font-face{
     font-family: 'panthera';
-    src: url(../font/Panthera.ttf);
+    src: url("../font/Panthera.ttf");
 }
 
 @font-face{
     font-family: 'wakanda';
-     src: url(../font/WakandaForever-Regular.ttf);
+     src: url("../font/WakandaForever-Regular.ttf");
 }
 
 ::-webkit-scrollbar {
@@ -195,7 +195,56 @@ p{
     margin-left: 102px;
     display: flex;
     background-color: #030e31d5;
+    justify-content: space-between;
+    height: 260px;
+    max-width: 100%;
+    transition: transform 0.5s ease;
 }
+
+#carousel-container {
+    position: relative;
+    margin-left: 102px;
+    display: flex;
+    background-color: #030e31d5;
+    justify-content: space-between;
+    height: 260px;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+
+}
+
+
+.slide-content {
+    display: flex;
+    
+}
+
+.slide-content .slider-image {
+    width: 50%;
+}
+
+.slide-content .slider-text{
+    width: 155px;
+    
+}
+
+
+
+.next-slide{
+    margin-top: 100px;
+    width:40px; 
+    height:40px;
+    z-index: 10; 
+    right: 70px; 
+    position: absolute;
+    border-radius: 50%;
+      
+}
+.next-slide:hover {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 1);
+  }
+
 
 .slider-image img{
     height: 260px;
@@ -204,26 +253,20 @@ p{
     margin-bottom: -3px;
 }
 
-.slider-image img{
-transition: transform 0.3s ease-in-out;
-}
 
-.slider-image img:hover{
-    transform: scale(1.3);
-}
-
-.slider-content{
+.slider-text{
 font-family: 'cantarell';
 font-size: 10px;
 margin: 15px;
 margin-top: 30px;
 }
 
-#multimedia .slider-content{
+#multimedia .slider-text{
     padding: 0;
 }
 
 /*styles pour identité*/
+
 
 #carte-identité .carte{
     width: 350px;
@@ -234,9 +277,11 @@ margin-top: 30px;
     margin-right: 100px;
 }
 
-#carte-identité .carte p{
+#carte-identité  p{
     color: #000000;
-    text-align: center;
+    text-align: justify;
+    width: 70%;
+    margin-left: 50px;
     
 }
 
@@ -248,18 +293,24 @@ margin-top: 30px;
 }
 
 #carte-identité .carte button{
-    border-color: var(--White-color);
-    color: var(--White-color);
-    width: 60px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: var(--Bleu1-color);
-
+  display: inline-block;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 5px;
+  font-family: "cantarell";
+  background-color: var(--Bleu1-color);
+  color: var(--White-color);
+  padding: 10px 15px;
+  margin: 10px;
+  border: #fff;
 }
 
-#carte-identité .carte ul{
+#carte-identité ul{
     display: inline-flex;
+    margin-left: 50px;
+    list-style-type: none;
 }
+
 
 #carte-identité .carte .TChalla img{
     position: relative;
@@ -365,129 +416,117 @@ margin-top: 30px;
 
 /*style de footer*/
 
-footer{
-    background-image: url(../illustration/ofpages/back_footer.png);
+
+.footerDiv p, 
+.footerDiv a,
+.footerDiv li {
+    font-family: cantarell;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 0;
+    color: #fff;
+}
+
+footer h3 {
+    font-family: Cantarell;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 5px 0 10px;
+}
+
+footer {
+    background: url(../illustration/ofpages/back_footer.png); 
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    color: var(--White-color);
+    background-size: 100% 100%;
+    border: solid 1px transparent;
 }
 
-footer .footer {
-    margin-top: 150px;
+.footerDiv {
+    margin: 200px 10% 50px;
 }
 
-.footer, .footer .footer_text{
+.footerDiv {
+    display: grid;
+    grid-template-areas: 
+        "logo logo pages findUs"
+        "logo logo pol pol";
+    gap: 15px;
+}
+
+
+.logo {
+    grid-area: logo;
+}
+
+.pages {
+    grid-area: pages;
+}
+
+.findUs {
+    grid-area: findUs;
+}
+
+.pol {
+    grid-area: pol;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+}
+
+.logo__imgCont {
+    width: 25vw;
+    height: 25vw;
+    min-width: 150px;
+    min-height: 150px;
+    background: url(../illustration/ofpages/footer1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
-    justify-content: space-between;
-}
-
-footer .footer .footer_text{
-    align-items: center;
-    width: 50%;
-}
-
-.image1{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    z-index: 3;
-}
-
-.image2{
-    position: absolute;
-    z-index: 4;
-    left: 250px;
-}
-
-footer .footer_content{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    background-image: url(./Illustrations/Logo/footer1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 450px;
-    width: 50%;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
-footer .footer_text ul li a{
-    text-decoration: none;
-    color: var(--White-color);
-    font-family: "Cantarell";   
+.logo__imgCont__img {
+    position: relative;
+    right: 2vw;
+    width: 12vw;
+    min-width: 75px;
 }
 
-footer .footer_text ul li{
-    display: block;
-    text-decoration: none;
+.logo__imgCont:hover {
+    transform: scale(110%);
 }
 
-footer .footer_text h2{
-    text-decoration: none;
-    font-family: "Cantarell" ;
-    font-size: 16px;
-    letter-spacing: 28%;
+.pages a:hover {
+    text-decoration: underline;
 }
 
-.down{
-    margin-left: 0;
-    font-family: 'cantarell';
-    font-size: 22px;
-    color: #fff;
+.findUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
 
-.icon{
-margin-right: 120px;
-margin-top: 40px;
-width: 100%;
+.findUs img {
+    max-width: 60px;
+    margin: 0 5px;
 }
 
-footer .icon img{
-    padding: 5px;
+.findUs img:hover {
+    transform: scale(110%);
 }
 
-footer
-.condution
-{
+.pol {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-   
-    margin-top: -10px;
-    right: 20px;
-    font-family: "Cantarell";
-    font-size: 12px;
-    margin-right: 20%;
-    margin-left: 600px;
 }
-
-footer
-.condution
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.page{
-  margin-left: -120px ;
-}
-
-footer
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-footer 
-ul{
-    font-family: 'cantarell';
-}
-
-footer 
-ul li{
-    display:flex;
-}
-/*responsive mobile*/
+    
+/*responsive mobile phone*/
 
 @media (max-width: 767px) {
   html {
