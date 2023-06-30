@@ -223,20 +223,29 @@ span{
     top: 30px;
 }
 
+
 .fond{
-    width: 110%;
+    width: 100%;
     position: absolute;
     z-index: 3;
     top: -90px;
 
 }
 
-.bar{
+.bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
     border-top: #0c1530 4px solid;
-    top: 150px;
     width: 100%;
-    margin-left: -102;
+}
+
+.bar img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .bar2{
@@ -246,52 +255,28 @@ span{
     margin-left: -102;
 }
 
-
-#citation
-.container
-.cite{
-    margin-left: 120px;
-    text-align: justify;
-    width: 60%;
-}
-
-#défi
-.déchiffre{
-    width: 51%;
-    margin-left: 120px;
-}
-
-#défi
-.enigme{
+#enigme {
     display: flex;
+    overflow-x: hidden;
 }
 
-.tip{
-    width: 50%;
+
+
+#enigme div.question {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: calc(100% - 200px);
+    box-sizing: border-box;
     text-align: justify;
-
 }
 
-.tip
-.fond1{
-    width: 100%;
-    z-index: 3;
-    position: relative;
-
-    
+#enigme div.tip {
+    margin-right: 150px;
+    width: calc(100% - 300px);
+    box-sizing: border-box;
 }
 
-.tip
-p{
-    text-align: center;
-    z-index: 4;
-    font-size: 13px;
-    top: 1150px;
-    position: absolute;
-    margin: 100px;
-}
 
-#défi
 .form
 .textarea{
     width: 500px;
@@ -301,7 +286,7 @@ p{
     border: 1px solid var(--Violet-color);
 }
 
-#défi
+
 .form
 .btn{
     width: 174px;
@@ -314,21 +299,37 @@ p{
 
 ::placeholder{
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
-#défi
+
 .form
 .btn:hover{
     box-shadow: #F2CEF2 0px 0px 15px;
     
 }
 
-#défi
-.form{
-    margin-top: -50px;
-    margin-left: 150px;
+.tip {
+    position: relative;
 }
+  
+.tip-image {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    z-index: 10;
+    width: 650px;
+    height: 400px;
+}
+
+.tip-text{
+    margin-top: 150px;
+}
+
+.tip-text,
+.tip span {
+    font-size: 13px; 
+} 
 
 /*style de footer*/
 
@@ -359,6 +360,33 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border: solid 1px transparent;
+}
+
+
+.footerDiv ul {
+    padding: 0;
+}
+
+.footerDiv li {
+    list-style: none;
+}
+
+.footerDiv li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 5px 0;
+}
+
+
+.footerDiv ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.pages h3 {
+    margin: 5px 0 10px;
 }
 
 .footerDiv {

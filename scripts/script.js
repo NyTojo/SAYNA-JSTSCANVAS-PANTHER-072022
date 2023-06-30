@@ -37,6 +37,13 @@ const updateCarousel = () => {
 // Gérer le clic sur le bouton suivant
 nextButton.addEventListener("click", () => {
   slideIndex = (slideIndex + 1) % totalSlides;
+
+  // Vérifier si la diapositive est la huitième diapositive
+  if (slideIndex === 8) {
+    // Réinitialiser l'index de la diapositive à zéro pour revenir à la première diapositive
+    slideIndex = 0;
+  }
+
   updateCarousel();
 });
 

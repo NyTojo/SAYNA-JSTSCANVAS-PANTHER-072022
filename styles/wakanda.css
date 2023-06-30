@@ -133,7 +133,7 @@ h2{
 
 #wakanda{
     height: 700px;
-    background-image: url(../illustration/wakanda/Pantherwakanda1.png);
+    background-image: url(../illustration/wakanda/Pantherwakanda1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #172f7c88;
@@ -269,6 +269,33 @@ footer {
         "logo logo pages findUs"
         "logo logo pol pol";
     gap: 15px;
+}
+
+
+.footerDiv ul {
+    padding: 0;
+}
+
+.footerDiv li {
+    list-style: none;
+}
+
+.footerDiv li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 5px 0;
+}
+
+
+.footerDiv ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.pages h3 {
+    margin: 5px 0 10px;
 }
 
 
