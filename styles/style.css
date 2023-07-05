@@ -8,6 +8,41 @@
     --bleu3-color:#021740;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .fade-in.fade-in-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  
+  /* Application de l'animation aux éléments */
+  h1, h2, p, img {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
+  #contact {
+    opacity: 0; 
+    animation: fade-in 1s forwards; 
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+
+
 @font-face{
     font-family: 'beyno';
     src: url("../font/beyno.ttf");
@@ -143,6 +178,7 @@ ul li a:hover{
     justify-content: stretch;
     text-align: start;
     width: 35%;
+    
 }
 
 .personnes{
@@ -199,6 +235,9 @@ p{
     height: 260px;
     max-width: 100%;
     transition: transform 0.5s ease;
+}
+#slider-multimedia a{
+    color: #fff;
 }
 
 #carousel-container {

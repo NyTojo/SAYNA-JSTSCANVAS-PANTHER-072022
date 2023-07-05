@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
-    
+    <link rel="icon" href="./illustration/logo_souris_BP2_blanc.png" alt="icon">
+    <script src="./scripts/scroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>BLACK PANTHER</title>
 </head>
@@ -51,18 +52,18 @@
                     <h2 class="forever">WAKANDA FOREVER</h2><br><br>
                     <p class="text">En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend hommage aux cultures africaine et afro-américaine. On y évoque le racisme, la colonisation et les violences contre les Afro-Américains.</p>
                     <p class="text">Ce film marque toute une génération, c'est 100% africain et c'est parfait.</p><br>
-                    <p class="text"><u>Voir plus &gt;</u></p>
+                    <a href="#article" class="text"><u>Voir plus &gt;</u></a>
                 </div>
             </div>
         </section>
         <div class="espace-vertical"></div><br><br>
         
-    <div id="carousel-container" class="exclude-fade">
+    <div id="carousel-container">
 
         <section id="slider-multimedia">
             <div class="slide-content">
                 <div class="slider-image">
-                    <img src="./illustration/Accueil/Pantherhome2.png" alt="killmonger">
+                    <img src="./illustration/Accueil/Pantherhome2.png" style="height: 100%;" alt="killmonger">
                 </div>
                 <div class="slider-text">
                     <h2 class="forever">KILLMONGER</h2>
@@ -157,7 +158,7 @@
                 </div>
                 <div class="slider-text">
                     <h2 class="forever">ULYSSE KLAUE</h2>
-                    <p class="personnes">Ulysses Klaue est un criminel international, gangster et vendeur d'armes sur le marché noir. En 1992, il collabora avec N'Jobu afin de voler une quantité importante de vibranium au Wakanda. Bien qu'il soit parvenu à voler et à s'échapper avec un stock important, il reçut une marque sur le cou de la part des Wakandais.</p>
+                    <p style="width: 100px;" class="personnes">Ulysses Klaue est un criminel international, gangster et vendeur d'armes sur le marché noir. En 1992, il collabora avec N'Jobu afin de voler une quantité importante de vibranium au Wakanda. Bien qu'il soit parvenu à voler et à s'échapper avec un stock important, il reçut une marque sur le cou de la part des Wakandais.</p>
                     <a href="#article">Voir plus &gt;</a>
                 </div>
             </div>
@@ -287,7 +288,8 @@
      <div class="espace-vertical" ></div>
 
 
-    <section id="contact"><div class="espace-vertical"></div>
+     <section id="contact" >
+        <div class="espace-vertical"></div>
         <div class="formulaire">
             <div class="form"><br>
                 <h4>Besoin de l'intervention de Wakanda?</h4>
@@ -305,6 +307,7 @@
                 </form>
             </div>
         </div>
+        <canvas id="myCanvas" width="400" height="200"></canvas>
     </section>
 </main>
 <footer class="reveal">

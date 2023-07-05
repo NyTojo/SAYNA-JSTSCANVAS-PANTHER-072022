@@ -255,14 +255,23 @@ span{
     margin-left: -102;
 }
 
-#enigme {
+#enigme1,
+#enigme2,
+#enigme3 {
     display: flex;
     overflow-x: hidden;
 }
+#enigme1 h3,
+#enigme2 h3,
+#enigme3 h3{
+    font-family: beyno;
+    color: var(--Rose-color);
+}
 
 
-
-#enigme div.question {
+#enigme1 div.question,
+#enigme2 div.question,
+#enigme3 div.question {
     margin-left: 150px;
     margin-right: 150px;
     width: calc(100% - 200px);
@@ -270,12 +279,17 @@ span{
     text-align: justify;
 }
 
-#enigme div.tip {
+#enigme1 div.tip,
+#enigme2 div.tip,
+#enigme3 div.tip {
     margin-right: 150px;
     width: calc(100% - 300px);
     box-sizing: border-box;
 }
-
+#enigme3
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .form
 .textarea{

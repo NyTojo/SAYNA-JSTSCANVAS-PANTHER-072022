@@ -39,7 +39,7 @@ nextButton.addEventListener("click", () => {
   slideIndex = (slideIndex + 1) % totalSlides;
 
   // Vérifier si la diapositive est la huitième diapositive
-  if (slideIndex === 8) {
+  if (slideIndex === 9) {
     // Réinitialiser l'index de la diapositive à zéro pour revenir à la première diapositive
     slideIndex = 0;
   }
@@ -49,3 +49,16 @@ nextButton.addEventListener("click", () => {
 
 // Initialiser le carrousel
 updateCarousel();
+
+
+function showPopup() {
+  // Afficher la boîte de dialogue contextuelle (popup box)
+  alert("Message reçu");
+}
+
+// Récupérer la référence de l'élément canvas
+var canvas = document.getElementById("myCanvas");
+
+// Ajouter un gestionnaire d'événement au clic sur le canvas
+canvas.addEventListener("click", showPopup);
+
