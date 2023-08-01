@@ -1,6 +1,10 @@
-// Fonction pour vérifier si un élément est visible à l'écran
-function isElementInViewport(element) {
-    var rect = element.getBoundingClientRect();
+document.addEventListener("DOMContentLoaded", function () {
+  const elementsToAnimate = document.querySelectorAll(
+    "#perssonage h1, #perssonage p,#perssonage h2, #article h2, #article p, #carte-identité img"
+  );
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
@@ -8,33 +12,17 @@ function isElementInViewport(element) {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
-  
-  // Fonction pour animer les éléments visibles à l'écran
+
   function animateElements() {
-    var elements = document.querySelectorAll("h1, h2, p, img");
-  
-    elements.forEach(function (element) {
-      if (isElementInViewport(element)) {
-        element.style.opacity = 1;
+    elementsToAnimate.forEach(function (element) {
+      if (isInViewport(element)) {
+        element.style.opacity = "1";
+        element.style.transform = "translateX(0)";
       }
     });
   }
-  
-  // Événement de défilement de la page
+
+  animateElements();
+
   window.addEventListener("scroll", animateElements);
-  
-  window.addEventListener('scroll', function() {
-    var elements = document.querySelectorAll('.fade-in');
-    
-    
-    for (var i = 0; i < elements.length; i++) {
-      var element = elements[i];
-      var position = element.getBoundingClientRect().top;
-      
-      if (position < window.innerHeight) {
-        element.classList.add('fade-in-visible');
-      }
-    }
-  });
-  
- 
+});

@@ -21,10 +21,17 @@
   
   
   /* Application de l'animation aux éléments */
-  h1, h2, p, img {
+
+#perssonage h1,
+#perssonage p,
+#perssonage h2,
+#article h2,
+#article p,
+#carte-identité img
+   {
     opacity: 0;
-    animation: fadeIn 1s ease-in-out;
-    transition: opacity 0.5s ease-in-out; 
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
   
   #contact {
@@ -149,6 +156,36 @@ ul li a:hover{
     margin-left: 25px;
 }
 
+.line {
+            position: fixed;
+            width: 3px;
+            height: 40%;
+            background-color: var(--Violet-color);
+            left: 50px;
+            top: 0;
+            z-index: 9;
+            animation-timing-function: ease;
+}
+
+.line1 {
+            position: fixed;
+            width: 3px;
+            height: 50%;
+            background-color: var(--Violet-color);
+            left: 70px;
+            top: 0;
+            z-index: 9;
+            animation-timing-function: ease;
+}
+
+@keyframes descendLine {
+    0% {
+        top: -300px;
+    }
+    100% {
+        top: 0;
+    }
+}
 
 .scroll{
     display: flex;
@@ -558,6 +595,9 @@ justify-content: center;
 
 .findUs img:hover {
     transform: scale(110%);
+}
+figure{
+    margin-top: 60px;
 }
 
 .pol {

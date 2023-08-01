@@ -39,7 +39,7 @@ nextButton.addEventListener("click", () => {
   slideIndex = (slideIndex + 1) % totalSlides;
 
   // Vérifier si la diapositive est la huitième diapositive
-  if (slideIndex === 9) {
+  if (slideIndex === 8) {
     // Réinitialiser l'index de la diapositive à zéro pour revenir à la première diapositive
     slideIndex = 0;
   }
@@ -62,3 +62,17 @@ var canvas = document.getElementById("myCanvas");
 // Ajouter un gestionnaire d'événement au clic sur le canvas
 canvas.addEventListener("click", showPopup);
 
+
+// Fonction pour ajouter l'animation descendLine aux éléments
+function addAnimationToElement(element, animationName, duration) {
+  element.style.animation = `${animationName} ${duration}ms`;
+  element.style.animationFillMode = 'forwards';
+}
+
+// Sélection des éléments .line et .line1
+const lineElement = document.querySelector('.line');
+const line1Element = document.querySelector('.line1');
+
+// Ajouter l'animation aux éléments sélectionnés
+addAnimationToElement(lineElement, 'descendLine', 4000); 
+addAnimationToElement(line1Element, 'descendLine', 4000);
