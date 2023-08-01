@@ -136,8 +136,13 @@ nav{
     margin-right: 100px;
 }
 
-header ul li a{
-    color: white;
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--Bleu1-color);
+}
+
+nav ul li a {
+    color: var(--White-color);
 }
 
 header ul li{
@@ -147,35 +152,31 @@ header ul li{
     text-decoration: none;
 }
 
-ul li a:hover{
-    color: var(--Bleu1-color);
-}
-
 .logo{
     margin-top: 25px;
     margin-left: 25px;
 }
 
 .line {
-            position: fixed;
-            width: 3px;
-            height: 40%;
-            background-color: var(--Violet-color);
-            left: 50px;
-            top: 0;
-            z-index: 9;
-            animation-timing-function: ease;
+    position: fixed;
+    width: 3px;
+    height: 40%;
+    background-color: var(--Violet-color);
+    left: 50px;
+    top: 0;
+    z-index: 9;
+    animation-timing-function: ease;
 }
 
 .line1 {
-            position: fixed;
-            width: 3px;
-            height: 50%;
-            background-color: var(--Violet-color);
-            left: 70px;
-            top: 0;
-            z-index: 9;
-            animation-timing-function: ease;
+    position: fixed;
+    width: 3px;
+    height: 50%;
+    background-color: var(--Violet-color);
+    left: 70px;
+    top: 0;
+    z-index: 9;
+    animation-timing-function: ease;
 }
 
 @keyframes descendLine {
@@ -186,6 +187,19 @@ ul li a:hover{
         top: 0;
     }
 }
+
+#image-suiveuse {
+    position: absolute;
+    pointer-events: none; 
+    z-index: 9999;
+}
+
+#image-suiveuse img {
+    width: 30px; 
+    height: 40px; 
+}
+
+
 
 .scroll{
     display: flex;

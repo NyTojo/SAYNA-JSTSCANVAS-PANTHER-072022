@@ -52,27 +52,40 @@ updateCarousel();
 
 
 function showPopup() {
-  // Afficher la boîte de dialogue contextuelle (popup box)
+  
   alert("Message reçu");
 }
 
-// Récupérer la référence de l'élément canvas
+
 var canvas = document.getElementById("myCanvas");
 
-// Ajouter un gestionnaire d'événement au clic sur le canvas
+
 canvas.addEventListener("click", showPopup);
 
 
-// Fonction pour ajouter l'animation descendLine aux éléments
 function addAnimationToElement(element, animationName, duration) {
   element.style.animation = `${animationName} ${duration}ms`;
   element.style.animationFillMode = 'forwards';
 }
 
-// Sélection des éléments .line et .line1
+
 const lineElement = document.querySelector('.line');
 const line1Element = document.querySelector('.line1');
 
-// Ajouter l'animation aux éléments sélectionnés
+
 addAnimationToElement(lineElement, 'descendLine', 4000); 
 addAnimationToElement(line1Element, 'descendLine', 4000);
+
+
+document.addEventListener('mousemove', function (event) {
+  var imageSuiveuse = document.getElementById('image-suiveuse');
+  var mouseX = event.clientX;
+  var mouseY = event.clientY;
+  var scrollX = window.scrollX;
+  var scrollY = window.scrollY;
+
+  imageSuiveuse.style.left = mouseX + scrollX + 'px';
+  imageSuiveuse.style.top = mouseY + scrollY + 'px';
+});
+
+

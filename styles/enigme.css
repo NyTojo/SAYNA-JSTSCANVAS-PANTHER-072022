@@ -89,8 +89,13 @@ nav{
     margin-right: 100px;
 }
 
-ul li a{
-    color: white;
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--Bleu1-color);
+}
+
+nav ul li a {
+    color: var(--White-color);
 }
 
 ul li{
@@ -100,9 +105,6 @@ ul li{
     text-decoration: none;
 }
 
-ul li a:hover{
-    color: var(--Bleu1-color);
-}
 
 .logo{
     margin-top: 25px;
@@ -138,6 +140,17 @@ top: -300px;
 100% {
 top: 0;
 }
+}
+
+#image-suiveuse {
+    position: absolute;
+    pointer-events: none; 
+    z-index: 9999;
+}
+
+#image-suiveuse img {
+    width: 30px; 
+    height: 40px; 
 }
 
 .scroll{
